@@ -109,7 +109,7 @@ public class Lexer {
 				case ')':
 					ch = nextChar();
 					return Token.rightParenTok;
-
+						
 				case '{':
 					ch = nextChar();
 					return Token.leftBraceTok;
@@ -166,7 +166,8 @@ public class Lexer {
 			error("Illegal character, expecting " + c);
 		ch = nextChar();
 	}
-
+	
+	
 	private Token chkOpt(char c, Token one, Token two) {
 		ch = nextChar();
 		if (ch == '=') {

@@ -3,7 +3,6 @@ package compiler2;
 import java.io.*;
 
 public class Lexer {
-
 	private boolean isEof = false;
 	private char ch = ' ';
 	private BufferedReader input;
